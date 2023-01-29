@@ -94,7 +94,7 @@
     justify-content: space-between;
     overflow: auto;
     overflow-x: hidden;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .food-item {
@@ -103,10 +103,6 @@
     width: 90%;
     margin-left: 5%;
     box-shadow: 0 0 4px black;
-}
-
-.instruc-title {
-    text-align: center;
 }
 
 .food-title {
@@ -120,10 +116,9 @@
 
 .food-list {
     font-weight: bold;
-    line-height: 1.8rem;
+    line-height: 2rem;
     display: flex;
     flex-direction: column;
-    max-width: 640px;
 }
 
 .more-info {
@@ -142,11 +137,11 @@
 }
 
 .instructions-wrapper {
-    width: 640px;
+    width: 70%;
 }
 
 .ingredients-wrapper {
-    width: 400px;
+    width: 30%;
 }
 
 .inactive {
@@ -164,6 +159,7 @@
     font-weight: bold;
     padding: 1rem;
     letter-spacing: 3px;
+    pointer-events: none;
 }
 
 .img-wrapper {
