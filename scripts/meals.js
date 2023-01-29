@@ -9,7 +9,7 @@ arrowDropFirst.addEventListener("click", () => {
     if (foodItemFirstActive) {
         foodItemFirst.forEach(item => {
             item.style.display = "none"
-            arrowDropFirst.innerHTML = "&and;"
+            arrowDropFirst.innerHTML = "&#62;"
             foodItemFirstActive = false
         })
     } else {
@@ -25,7 +25,7 @@ arrowDropSec.addEventListener("click", () => {
     if (foodItemSecActive) {
         foodItemSec.forEach(item => {
             item.style.display = "none"
-            arrowDropSec.innerHTML = "&and;"
+            arrowDropSec.innerHTML = "&#62;"
             foodItemSecActive = false
         })
     } else {

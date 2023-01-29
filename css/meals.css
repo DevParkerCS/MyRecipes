@@ -1,8 +1,8 @@
 .title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
-    margin-top: 7rem;
+    margin-top: 13rem;
     margin-bottom: 3rem;
     color: #f4fbfb;
     text-shadow: 0 0 10px black;
@@ -12,7 +12,7 @@
     font-size: 1.8rem;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 3.5rem;
+    margin-bottom: 10rem;
     line-height: 3rem;
     color: #f4fbfb;
     text-shadow: 0 0 10px black;
@@ -116,14 +116,18 @@
 }
 
 .more-info {
-    color: blue;
-    text-shadow: 0 0 10px white;
+    color: #f4fbfb;
     font-weight: bold;
     height: 20px;
     font-size: 1.2rem;
     margin-top: 1rem;
     min-width: 200px;
     margin-right: 1rem;
+}
+
+.more-info:hover {
+    color: #17252a;
+    text-shadow: 0 0 20px white;
 }
 
 .instructions-wrapper {
