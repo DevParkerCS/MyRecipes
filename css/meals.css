@@ -1,0 +1,135 @@
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    color: #f4fbfb;
+    text-shadow: 0 0 10px black;
+}
+
+.subtext {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3.5rem;
+    line-height: 3rem;
+    color: #f4fbfb;
+    text-shadow: 0 0 10px black;
+}
+
+.tips-btn {
+    margin: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+}
+
+.main-content-wrapper {
+    margin-top: 66px;
+    width: 100%;
+}
+
+.dropdown-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.dropdown {
+    width: 90%;
+    background-color: #2f8784;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    box-shadow: 0 0px 20px black;
+}
+
+.dropdown-title {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: #f4fbfb;
+    text-shadow: 0 0 10px black;
+}
+
+.drop-arrow {
+    font-size: 3.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 4px;
+    color: #f4fbfb;
+    text-shadow: 0 0 20px black;
+    user-select: none;
+}
+
+.food-img {
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.food-txt {
+    width: 1950px;
+    height: 400px;
+    background-color: #2f8784;
+    color: #f4fbfb;
+    text-shadow: 0 0 10px black;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    overflow-x: hidden;
+    font-size: 1.1rem;
+}
+
+.food-item {
+    margin-top: 2rem;
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 0 4px black;
+}
+
+.instruc-title {
+    text-align: center;
+}
+
+.food-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+
+.food-list {
+    font-weight: bold;
+    line-height: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+}
+
+.more-info {
+    color: blue;
+    text-shadow: 0 0 10px white;
+    font-weight: bold;
+    height: 20px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    min-width: 200px;
+    margin-right: 1rem;
+}
+
+.instructions-wrapper {
+    width: 640px;
+}
+
+.ingredients-wrapper {
+    width: 400px;
+}

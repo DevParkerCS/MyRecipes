@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700;900&family=Montserrat:wght@600&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #3AAFA9;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    width: 100%;
+    height: 66px;
+    background-color: #2B7a78;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.navbtn {
+    padding-left: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: WHITE;
+}
+
+.nav-a-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
