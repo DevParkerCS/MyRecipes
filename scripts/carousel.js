@@ -16,6 +16,7 @@ buttons.forEach(button => {
     })
 })
 
+
 // buttons.forEach(button => {
 //     setInterval(() => {
 //         const offset = 1 // button.dataset.carouselBtn === "next" ? 1 : -1

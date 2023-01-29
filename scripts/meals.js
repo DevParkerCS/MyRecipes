@@ -5,6 +5,7 @@ const foodItemSec = document.querySelectorAll(".item-sec")
 foodItemFirstActive = true
 foodItemSecActive = true
 
+
 arrowDropFirst.addEventListener("click", () => {
     if (foodItemFirstActive) {
         foodItemFirst.forEach(item => {
