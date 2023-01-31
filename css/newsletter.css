@@ -4,7 +4,7 @@
 
 .popup-active {
     display: block;
-    width: 600px;
+    width: 40%;
     height: 60%;
     position: fixed;
     top: 50%;
@@ -16,10 +16,37 @@
 }
 
 .popup-exit {
-    text-align: right;
-    padding-right: 5px;
-    color: red;
+    color: black;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 2rem;
     cursor: pointer;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.popup-top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup-exit:hover {
+    background-color: rgba(255, 0, 0, 1);
+    font-weight: bolder;
+    color: white;
+}
+
+.body-inactive {
+    overflow: hidden;
+}
+
+.darken-page {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
