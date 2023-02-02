@@ -166,3 +166,25 @@
     position: relative;
     height: 400px;
 }
+
+.suggestion-wrapper {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    background-color: #2f8784;
+    padding: 15px;
+    box-shadow: 0 0 20px black;
+    text-shadow: 0 0 20px black;
+    margin-top: 3rem;
+}
+
+.suggestion-wrapper>a {
+    color: rgb(0, 229, 255);
+}
+
+.suggestion-wrapper>a:hover {
+    text-shadow: 0 0 20px white;
+}
