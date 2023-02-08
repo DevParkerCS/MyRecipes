@@ -4,9 +4,9 @@ const arrowDropSec = document.querySelector(".sec-arw")
 const foodItemSec = document.querySelectorAll(".item-sec")
 const arrowDropThird = document.querySelector(".third-arw")
 const foodItemThird = document.querySelectorAll(".item-third")
-foodItemFirstActive = true
-foodItemSecActive = true
-foodItemThirdActive = true
+let foodItemFirstActive = true
+let foodItemSecActive = true
+let foodItemThirdActive = true
 
 arrowDropFirst.addEventListener("click", () => {
     if (foodItemFirstActive) {

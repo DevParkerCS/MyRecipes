@@ -104,6 +104,8 @@
     width: 90%;
     margin-left: 5%;
     box-shadow: 0 0 4px black;
+    max-height: 400px;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .food-title {
@@ -145,8 +147,15 @@
     width: 30%;
 }
 
+.first-item-wrapper {
+    height: 100%;
+}
+
 .inactive {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    margin-left: 5%;
 }
 
 .food-name {
