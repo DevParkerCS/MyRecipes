@@ -7,7 +7,9 @@
 
 body {
     margin: 0;
-    background-color: #3AAFA9;
+    /* background-color: #3AAFA9; */
+    /* background-color: #362417; */
+    background-color: #f1dabf5b;
 }
 
 .nav-wrapper {
@@ -16,22 +18,37 @@ body {
     align-items: center;
     border-bottom: 3px solid black;
     width: 100%;
-    height: 66px;
-    background-color: #2b7a77e6;
+    height: 70px;
+    background-color: #92817af3;
     position: fixed;
     z-index: 10;
     top: 0;
+    overflow: hidden;
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-left: 5%;
+    color: transparent;
+    background-image: url("../images/logo.png");
+    background-position: -5px -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo:hover {
+    transition: all 0.1s;
+    transform: scale(1.1);
 }
 
 .navbtn {
-    padding-left: 30px;
-    font-size: 1.2rem;
+    margin-left: 30px;
+    font-size: 1.4rem;
     text-decoration: none;
     font-weight: bold;
     color: WHITE;
@@ -41,4 +58,10 @@ body {
     display: flex;
     align-items: center;
     margin-right: 5%;
+}
+
+.nav-a-wrapper a:hover {
+    transition: all 0.1s;
+    transform: scale(1.2);
+    text-shadow: 0 0 5px rgba(255, 98, 98, 0.751);
 }

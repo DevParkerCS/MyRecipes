@@ -17,9 +17,9 @@
 }
 
 .top-text-wrap {
-    width: 90%;
+    width: 95%;
     background-image: url("../images/codrice.jpg");
-    margin-left: 5%;
+    margin-left: 2.5%;
     /* margin-top: 10rem; */
     margin-bottom: 7rem;
     padding: 5rem 0;
@@ -50,8 +50,9 @@
 }
 
 .dropdown {
-    width: 90%;
-    background-color: #2f8784;
+    width: 95%;
+    /* background-color: #2f8784; */
+    background-color: #92817a;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,9 +89,10 @@
 .food-txt {
     width: 1950px;
     height: 400px;
-    background-color: #2f8784;
-    color: #f4fbfb;
-    text-shadow: 0 0 10px black;
+    /* background-color: #2f8784; */
+    background-color: #f1dabf;
+    color: black;
+    text-shadow: 0 0 10px white;
     display: flex;
     justify-content: space-between;
     overflow: auto;
@@ -101,8 +103,8 @@
 .food-item {
     margin-top: 2rem;
     display: flex;
-    width: 90%;
-    margin-left: 5%;
+    width: 95%;
+    margin-left: 2.5%;
     box-shadow: 0 0 4px black;
     max-height: 400px;
     transition: max-height 0.5s ease-in-out;
@@ -124,21 +126,6 @@
     flex-direction: column;
 }
 
-.more-info {
-    color: #f4fbfb;
-    font-weight: bold;
-    height: 20px;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    min-width: 200px;
-    margin-right: 1rem;
-}
-
-.more-info:hover {
-    color: #17252a;
-    text-shadow: 0 0 20px white;
-}
-
 .instructions-wrapper {
     width: 70%;
 }
@@ -154,15 +141,14 @@
 .inactive {
     max-height: 0;
     overflow: hidden;
-    margin: 0;
-    margin-left: 5%;
+    margin: 0 2.5%;
 }
 
 .food-name {
     position: absolute;
     width: 600px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
     bottom: 0;
     text-align: center;
     font-size: 2rem;
@@ -175,26 +161,29 @@
 .img-wrapper {
     position: relative;
     height: 400px;
+    transform: scale(1.0);
+    transition: all 0.2s;
+}
+
+.img-wrapper:hover {
+    transform: scale(1.01);
 }
 
 .suggestion-wrapper {
     font-size: 2.5rem;
-    color: white;
     font-weight: bold;
-    width: 90%;
-    margin-left: 5%;
+    width: 95%;
+    margin-left: 2.5%;
     text-align: center;
-    background-color: #2f8784;
+    background-color: #f1dabf;
     padding: 15px;
     box-shadow: 0 0 20px black;
-    text-shadow: 0 0 20px black;
     margin-top: 3rem;
 }
 
 .suggestion-wrapper>a {
-    color: rgb(0, 229, 255);
+    color: black;
+    text-decoration-color: #92817a;
 }
 
-.suggestion-wrapper>a:hover {
-    text-shadow: 0 0 20px white;
-}
+/* .suggestion-wrapper>a:hover {} */

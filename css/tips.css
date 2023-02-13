@@ -1,0 +1,138 @@
+.table-wrapper {
+    margin-top: 5rem;
+}
+
+.table-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: #f1dabf;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th,
+td {
+    width: 160px;
+    border: 2px solid #f1dabf;
+    padding: 10px;
+    /* color: white; */
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.tips-title {
+    margin-top: 6rem;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 4px;
+}
+
+.tips-sub {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    margin-top: 1rem;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+    margin-bottom: 5rem;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/knife.jpg");
+    width: 95%;
+    margin-left: 2.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 100px;
+    background-attachment: fixed;
+    margin-top: 70px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.tools-wrapper {
+    margin-top: 5rem;
+    width: 50%;
+    margin-left: 2.5%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tool-img {
+    width: 100%;
+    height: 307px;
+    background-size: contain;
+    background-position: center;
+}
+
+.tool-wrapper {
+    width: 50%;
+    position: relative;
+}
+
+.tool-name {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+}
+
+.tool-wrapper:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.video-title {
+    margin-top: 5rem;
+}
+
+.video-wrapper {
+    width: 95%;
+    margin-left: 2.5%;
+    display: flex;
+    height: 1200px;
+    flex-direction: column;
+}
+
+iframe {
+    margin-top: 0;
+    width: 49%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.right-video {
+    margin-left: 2%;
+}
+
+.video-block {
+    display: flex;
+    margin-bottom: 2rem;
+    height: 100%;
+}

@@ -10,48 +10,44 @@ let foodItemThirdActive = true
 
 arrowDropFirst.addEventListener("click", () => {
     if (foodItemFirstActive) {
-        foodItemFirst.forEach(item => {
-            item.classList.add("inactive")
-            arrowDropFirst.innerHTML = "&#62;"
-            foodItemFirstActive = false
-        })
+        setFoodItemsInactive(foodItemFirst, arrowDropFirst)
+        foodItemFirstActive = false
     } else {
-        foodItemFirst.forEach(item => {
-            item.classList.remove("inactive")
-            arrowDropFirst.innerHTML = "&or;"
-            foodItemFirstActive = true
-        })
+        setFoodItemsActive(foodItemFirst, arrowDropFirst)
+        foodItemFirstActive = true
     }
 })
 
 arrowDropSec.addEventListener("click", () => {
     if (foodItemSecActive) {
-        foodItemSec.forEach(item => {
-            item.classList.add("inactive")
-            arrowDropSec.innerHTML = "&#62;"
-            foodItemSecActive = false
-        })
+        setFoodItemsInactive(foodItemSec, arrowDropSec)
+        foodItemSecActive = false
     } else {
-        foodItemSec.forEach(item => {
-            item.classList.remove("inactive")
-            arrowDropSec.innerHTML = "&or;"
-            foodItemSecActive = true
-        })
+        setFoodItemsActive(foodItemSec, arrowDropSec)
+        foodItemSecActive = true
     }
 })
 
 arrowDropThird.addEventListener("click", () => {
     if (foodItemThirdActive) {
-        foodItemThird.forEach(item => {
-            item.classList.add("inactive")
-            arrowDropThird.innerHTML = "&#62;"
-            foodItemThirdActive = false
-        })
+        setFoodItemsInactive(foodItemThird, arrowDropThird)
+        foodItemThirdActive = false
     } else {
-        foodItemThird.forEach(item => {
-            item.classList.remove("inactive")
-            arrowDropThird.innerHTML = "&or;"
-            foodItemThirdActive = true
-        })
+        setFoodItemsActive(foodItemThird, arrowDropThird)
+        foodItemThirdActive = true
     }
 })
+
+const setFoodItemsInactive = (foodItem, arrowDrop) => {
+    foodItem.forEach(item => {
+        item.classList.add("inactive")
+        arrowDrop.innerHTML = "&#62;"
+    })
+}
+
+const setFoodItemsActive = (foodItem, arrowDrop) => {
+    foodItem.forEach(item => {
+        item.classList.remove("inactive")
+        arrowDrop.innerHTML = "&or;"
+    })
+}

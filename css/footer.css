@@ -55,13 +55,13 @@
 
 .newsletter-btn:hover {
     transition: all .2s ease-in-out;
-    background-color: rgba(23, 37, 42);
+    background-color: #04030F;
     color: white;
 }
 
 .footer-wrapper {
     height: 500px;
-    background-color: #17252A;
+    background-color: #04030F;
     margin-top: 3rem;
     padding-top: 2rem;
     display: flex;
