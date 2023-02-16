@@ -5,6 +5,7 @@
     margin-bottom: 3rem;
     color: #f4fbfb;
     text-shadow: 0 0 10px black;
+    -webkit-text-stroke: 2px black;
 }
 
 .subtext {
@@ -14,17 +15,24 @@
     line-height: 3rem;
     color: #f4fbfb;
     text-shadow: 0 0 10px black;
+    -webkit-text-stroke: 1px black;
+}
+
+.mobile {
+    display: none;
 }
 
 .top-text-wrap {
-    width: 95%;
+    width: 100%;
     background-image: url("../images/codrice.jpg");
-    margin-left: 2.5%;
+    /* margin-left: 2.5%; */
     /* margin-top: 10rem; */
+    height: 50vh;
     margin-bottom: 7rem;
     padding: 5rem 0;
     box-shadow: 0 0 10px black;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .tips-btn {
@@ -57,7 +65,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 5%;
-    box-shadow: 0 0px 20px black;
+    box-shadow: 0 10px 20px black;
     position: relative;
 }
 
@@ -82,7 +90,6 @@
 .food-img {
     width: 600px;
     height: 400px;
-    min-width: 600px;
     object-fit: cover;
 }
 
@@ -105,7 +112,8 @@
     display: flex;
     width: 95%;
     margin-left: 2.5%;
-    box-shadow: 0 0 4px black;
+    max-height: 100%;
+    box-shadow: 0 5px 4px black;
     max-height: 400px;
     transition: max-height 0.5s ease-in-out;
 }
@@ -146,7 +154,7 @@
 
 .food-name {
     position: absolute;
-    width: 600px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
     bottom: 0;
@@ -159,7 +167,6 @@
 }
 
 .img-wrapper {
-    position: relative;
     height: 400px;
     transform: scale(1.0);
     transition: all 0.2s;
@@ -167,6 +174,7 @@
 
 .img-wrapper:hover {
     transform: scale(1.01);
+    box-shadow: 5px 2px 15px white;
 }
 
 .suggestion-wrapper {
@@ -186,4 +194,72 @@
     text-decoration-color: #92817a;
 }
 
+.drop-arrow:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
 /* .suggestion-wrapper>a:hover {} */
+
+@media screen and (max-width: 480px) {
+
+    .food-img {
+        min-width: none;
+        width: 100%;
+    }
+
+    .food-item {
+        flex-direction: column;
+        width: 100%;
+        max-height: 100%;
+        margin: 1rem 0;
+    }
+
+    .food-txt {
+        width: 100%;
+        overflow: hidden;
+        font-size: .8rem;
+        height: 100%;
+    }
+
+    .food-name {
+        font-size: 1.3rem;
+    }
+
+    .food-title {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .top-text-wrap {
+        padding: 0;
+        margin: 0;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .dropdown-wrapper {
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .inactive {
+        max-height: 0;
+        overflow: hidden;
+        margin: 0;
+    }
+}
