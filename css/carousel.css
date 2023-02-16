@@ -4,8 +4,8 @@ img {
 }
 
 .carousel {
-    width: 90%;
-    height: 500px;
+    width: 100%;
+    height: 100vh;
     position: relative;
     margin-bottom: 5rem;
     margin-top: 66px;
@@ -38,7 +38,7 @@ img {
     border: none;
     font-size: 4rem;
     top: 50%;
-    z-index: 2;
+    z-index: 8;
     transform: translatey(-50%);
     color: rgba(255, 255, 255.5);
     cursor: pointer;
@@ -75,4 +75,80 @@ img {
 .carousel-wrapper {
     display: flex;
     justify-content: center;
+}
+
+.slide-txt {
+    display: flex;
+    z-index: 5;
+    font-size: 10rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    -webkit-text-stroke: 3px black;
+    font-weight: bold;
+    margin-top: 8rem;
+}
+
+.right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-txt {
+    font-size: 4rem;
+    margin-top: 3rem;
+    width: 90%;
+}
+
+.slide-img {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.slide-1 {
+    background-image: url('../images/lunchcurry.jpg');
+}
+
+.slide-2 {
+    background-image: url('../images/knife-set.jpg');
+}
+
+.slide-3 {
+    background-image: url('../images/receipt.jpg');
+}
+
+.slide-4 {
+    background-image: url("../images/lunchpizza.jpg");
+}
+
+.slide-btn {
+    max-width: 30%;
+    padding: .5rem 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #f1dabf89;
+    font-weight: bold;
+    transition: background-color .2s ease-in-out;
+    margin-top: 5rem;
+}
+
+.slide-btn a {
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+.slide-btn:hover {
+    background-color: #f1dabf;
 }
