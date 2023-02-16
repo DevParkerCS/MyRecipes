@@ -9,7 +9,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    background-color: #3AAFA9;
+    background-color: #f1dabf;
     transform: translate(-50%, -50%);
     opacity: 1;
     pointer-events: all;
@@ -31,7 +31,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    background-color: #2b7a78;
+    background-color: #92817af3;
 }
 
 .popup-exit:hover {
@@ -103,7 +103,7 @@
 
 .popup-submit:hover {
     box-shadow: 0 0 10px white;
-    font-size: 2.1rem;
+    transform: scale(1.05);
 }
 
 .form-field:hover {
@@ -117,4 +117,35 @@
 .submitted-text {
     display: none;
     margin-top: 3rem;
+}
+
+
+@media screen and (max-width:480px) {
+    .popup-active {
+        width: 100%;
+    }
+
+    .popup-title {
+        font-size: 1.3rem;
+    }
+
+    .form-field {
+        font-size: .8rem;
+        margin-top: 5px;
+    }
+
+    .form-text {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .popup-submit {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .submitted-text {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
 }
