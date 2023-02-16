@@ -27,12 +27,15 @@
     background-image: url("../images/codrice.jpg");
     /* margin-left: 2.5%; */
     /* margin-top: 10rem; */
-    height: 50vh;
+    height: 100%;
     margin-bottom: 7rem;
     padding: 5rem 0;
     box-shadow: 0 0 10px black;
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .tips-btn {
@@ -112,7 +115,6 @@
     display: flex;
     width: 95%;
     margin-left: 2.5%;
-    max-height: 100%;
     box-shadow: 0 5px 4px black;
     max-height: 400px;
     transition: max-height 0.5s ease-in-out;
@@ -202,7 +204,6 @@
 /* .suggestion-wrapper>a:hover {} */
 
 @media screen and (max-width: 480px) {
-
     .food-img {
         min-width: none;
         width: 100%;
@@ -213,6 +214,7 @@
         width: 100%;
         max-height: 100%;
         margin: 1rem 0;
+        transition: none;
     }
 
     .food-txt {
@@ -233,6 +235,7 @@
     .title {
         font-size: 3em;
         margin: 0;
+        padding-top: 1rem;
     }
 
     .top-text-wrap {
@@ -246,6 +249,7 @@
 
     .mobile {
         display: block;
+        padding-bottom: 1rem;
     }
 
     .dropdown-wrapper {
@@ -260,6 +264,20 @@
     .inactive {
         max-height: 0;
         overflow: hidden;
+        margin: 0;
+    }
+
+    .instructions-wrapper {
+        width: 60%;
+    }
+
+    .ingredients-wrapper {
+        width: 40%;
+    }
+
+    .suggestion-wrapper {
+        font-size: 1rem;
+        width: 100%;
         margin: 0;
     }
 }

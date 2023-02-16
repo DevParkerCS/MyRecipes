@@ -65,3 +65,36 @@ body {
     transform: scale(1.2);
     text-shadow: 0 0 5px rgba(255, 98, 98, 0.751);
 }
+
+@media screen and (max-width:480px) {
+    .nav-a-wrapper {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: black;
+        width: 100%;
+        right: 100%;
+        margin: 0;
+        transition: right .4s ease-in-out;
+    }
+
+    .navbtn {
+        border-bottom: 2px solid white;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nav-shown {
+        right: 0;
+        overflow: visible;
+    }
+
+    .hamburger {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-right: 5%;
+        cursor: pointer;
+    }
+}
