@@ -9,7 +9,9 @@ body {
     margin: 0;
     /* background-color: #3AAFA9; */
     /* background-color: #362417; */
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #92817adc;
+
 }
 
 .nav-wrapper {
@@ -24,6 +26,10 @@ body {
     z-index: 10;
     top: 0;
     overflow: hidden;
+}
+
+.hamburger {
+    display: none;
 }
 
 .logo {
@@ -60,10 +66,10 @@ body {
     margin-right: 5%;
 }
 
-.nav-a-wrapper a:hover {
-    transition: all 0.1s;
+.navbtn:hover {
+    transition: all 0.4s;
+    -webkit-text-stroke: 1px black;
     transform: scale(1.2);
-    text-shadow: 0 0 5px rgba(255, 98, 98, 0.751);
 }
 
 @media screen and (max-width:480px) {
@@ -96,5 +102,6 @@ body {
         font-weight: bold;
         margin-right: 5%;
         cursor: pointer;
+        display: block;
     }
 }
