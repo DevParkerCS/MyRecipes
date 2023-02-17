@@ -6,6 +6,14 @@
     color: black;
 }
 
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
 .title-subtext {
     font-size: 2rem;
     font-weight: bold;
@@ -76,7 +84,7 @@
 
 .load-more {
     text-align: center;
-    color: white;
+    color: black;
     cursor: pointer;
     padding: 20px;
     font-size: 1.5rem;
@@ -90,4 +98,32 @@
 
 .load-more-btn {
     font-size: 2.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .news-wrapper {
+        flex-direction: column;
+    }
+
+    .news-hidden {
+        height: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-in-out;
+    }
+
+    .main-news-sec {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: none;
+        margin-top: 1rem;
+    }
+
+    .news-wrapper {
+        width: 100%;
+        margin: 0;
+        max-height: 100%;
+    }
+
 }

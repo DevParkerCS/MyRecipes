@@ -1,34 +1,39 @@
 .table-wrapper {
-    margin-top: 5rem;
+    width: 50%;
+    height: 100%;
 }
 
 .table-title {
-    font-size: 2.5rem;
     font-weight: bold;
+    font-size: 4rem;
+    color: #f4fbfb;
+    text-shadow: 0 0 10px black;
     background-color: #f1dabf;
-    width: 100%;
-    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid black;
+    width: 100%;
+    padding: 5px;
 }
 
 th,
 td {
     width: 160px;
-    border: 2px solid #f1dabf;
-    padding: 10px;
-    /* color: white; */
+    border: 2px solid black;
+    padding: 16px;
     text-align: center;
 }
 
 table {
     border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+    height: 100%;
 }
 
 .tips-title {
-    margin-top: 6rem;
-    font-size: 5rem;
+    font-size: 9rem;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -37,10 +42,10 @@ table {
 }
 
 .tips-sub {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin-top: 1rem;
     color: white;
     -webkit-text-stroke-color: black;
@@ -52,43 +57,60 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-image: url("../images/knife.jpg");
-    width: 95%;
-    margin-left: 2.5%;
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-bottom: 100px;
     background-attachment: fixed;
-    margin-top: 70px;
 }
 
 .content-wrapper {
     display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
 }
 
 .tools-wrapper {
-    margin-top: 5rem;
     width: 50%;
-    margin-left: 2.5%;
-    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-}
-
-.tool-img {
-    width: 100%;
-    height: 307px;
-    background-size: contain;
-    background-position: center;
+    height: 100%;
 }
 
 .tool-wrapper {
     width: 50%;
+    height: 50%;
     position: relative;
+}
+
+.tool1 {
+    background-image: url('../images/knife-set.jpg');
+    height: calc(752px/2);
+    background-size: cover;
+    background-position: center;
+}
+
+.tool2 {
+    background-image: url('../images/knife-set.jpg');
+    height: calc(752px/2);
+    background-size: cover;
+    background-position: center;
+}
+
+.tool3 {
+    background-image: url('../images/knife-set.jpg');
+    height: calc(752px/2);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.tool4 {
+    background-image: url('../images/knife-set.jpg');
+    height: calc(752px/2);
+    background-size: cover;
+    background-position: center;
 }
 
 .tool-name {
@@ -107,32 +129,74 @@ table {
     cursor: pointer;
 }
 
-.video-title {
-    margin-top: 5rem;
-}
-
 .video-wrapper {
-    width: 95%;
-    margin-left: 2.5%;
     display: flex;
-    height: 1200px;
+    /* height: 1200px; */
     flex-direction: column;
 }
 
 iframe {
-    margin-top: 0;
-    width: 49%;
+    width: 50%;
     height: 100%;
     cursor: pointer;
     display: block;
 }
 
-.right-video {
-    margin-left: 2%;
-}
-
 .video-block {
     display: flex;
-    margin-bottom: 2rem;
     height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .table-wrapper {
+        width: 100%;
+    }
+
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+
+    .content-wrapper {
+        display: block;
+    }
+
+    th,
+    td {
+        font-size: .9rem;
+    }
+
+    .tools-wrapper {
+        width: 100%;
+        display: block;
+    }
+
+    .tool-wrapper {
+        width: 100%;
+    }
+
+    .table-title {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .tips-title {
+        font-size: 3em;
+        -webkit-text-stroke: 2px black;
+    }
+
+    .tips-sub {
+        font-size: 1.5rem;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .video-block {
+        display: block;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+        margin-bottom: .5rem;
+    }
 }
