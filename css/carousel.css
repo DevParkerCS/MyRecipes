@@ -124,7 +124,7 @@ img {
 }
 
 .slide-3 {
-    background-image: url('../images/receipt.jpg');
+    background-image: url('../images/news/receipt.jpg');
 }
 
 .slide-4 {
@@ -132,7 +132,7 @@ img {
 }
 
 .slide-btn {
-    max-width: 30%;
+    width: 30%;
     padding: .5rem 2rem;
     font-size: 4rem;
     cursor: pointer;
