@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.signin-wrapper {
+    height: 100%;
+    width: 35%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-top: 7rem;
+    box-shadow: 0 2px 5px black;
+}
+
+.signin-choice-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 5px black;
+    padding: 10px;
+}
+
+.signin-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0px 20px;
+    border-right: 1px solid black;
+    height: 80%;
+    color: white;
+}
+
+.fb-logo {
+    padding: 0 30px;
+}
+
+.logo-txt {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.signin-choice {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-top: 2rem;
+    box-shadow: 0 2px 5px black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.google {
+    background-color: #4285F4;
+    transition: all 0.2s;
+}
+
+.google:hover {
+    background-color: #2d77ee;
+}
+
+.facebook {
+    background-color: #4267B2;
+    transition: all 0.2s;
+}
+
+.facebook:hover {
+    background-color: #305295;
+}
+
+.email {
+    background-color: white;
+}
+
+.email-logo {
+    color: black;
+    padding: 0 15px;
+}
+
+.email-txt {
+    color: rgba(0, 0, 0, 0.653);
+}
+
+.email:hover .email-txt {
+    color: black;
+}
+
+.signup {
+    color: gray;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.signup-btn {
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.signup-wrapper {
+    margin: 1rem 0;
+}
+
+.form-name-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    font-size: 1.3rem;
+}
+
+.form-email {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.form-email-txt {
+    margin-top: 1rem;
+}
+
+.form-password {
+    width: 100%;
+}
+
+.signup-thanks {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}

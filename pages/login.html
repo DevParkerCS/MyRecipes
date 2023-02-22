@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/newsletter.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../scripts/newsletter.js" defer></script>
+    <title>Sign In</title>
+</head>
+
+<body>
+    <nav class="nav-wrapper">
+        <a href="../index.html" class="logo">AOBC</a>
+        <div class="nav-a-wrapper">
+            <a class="navbtn" href="../index.html">Home</a>
+            <a class="navbtn" href="meals.html">Meals</a>
+            <a class="navbtn" href="news.html">News</a>
+            <a class="navbtn" href="tips.html">Tips</a>
+            <a class="navbtn" href="login.html">Sign In</a>
+        </div>
+        <div class="hamburger">&#9776;</div>
+    </nav>
+
+    <main class="main-wrapper">
+        <div class="signin-wrapper">
+            <div class="signin-title">Sign In</div>
+            <div class="signin-choice-wrap">
+                <a href="https://www.facebook.com/login/" target="_blank" class="signin-choice facebook">
+                    <div class="signin-logo fb-logo">f</div>
+                    <div class="logo-txt">Sign In With Facebook</div>
+                </a>
+                <a href="https://accounts.google.com/v3/signin/identifier?dsh=S805385171%3A1676940587017382&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=en&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"
+                    class="signin-choice google" target="_blank">
+                    <div class="signin-logo">G</div>
+                    <div class="logo-txt">Sign In With Google</div>
+                </a>
+                <a class="signin-choice email">
+                    <div class="signin-logo email-logo">&#9993;</div>
+                    <div class="logo-txt email-txt">Sign In With Email</div>
+                </a>
+                <div class="signup">Dont Have An Account? &nbsp;<div class="signup-btn">Sign Up!</div>
+                </div>
+            </div>
+            <form class="signup-wrapper hidden">
+                <div class="form-name-wrap">
+                    <div>
+                        <div class="name-txt">First Name*</div>
+                        <input required class="name" type="text">
+                    </div>
+                    <div>
+                        <div class="name-txt">Last Name*</div>
+                        <input required class="name" type="text">
+                    </div>
+                </div>
+                <div class="form-email-txt">Enter Your Email*</div>
+                <input required class="form-email" type="email">
+                <div class="form-email-txt">Enter Your Password*</div>
+                <input required class="form-password" type="password">
+                <div class="form-email-txt">Confirm Your Password*</div>
+                <input required class="form-password password-conf" type="password">
+                <button class="form-btn">Submit</button>
+
+            </form>
+            <div class="signup-thanks hidden">You Are Now Officially A Part Of The AOBC Crew!</div>
+        </div>
+    </main>
+
+
+    <footer class="footer-wrapper">
+        <div class="footer-left">
+            <div class="form-wrapper">
+                <button class="newsletter-btn">NEWSLETTER</button>
+                <!-- <div class="newsletter">Join Our Newsletter</div> -->
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-a-wrapper">
+                <a class="ftrbtn" href="../index.html">Home</a>
+                <a class="ftrbtn" href="meals.html">Meals</a>
+                <a class="ftrbtn" href="news.html">News</a>
+                <a class="ftrbtn" href="#">Tips</a>
+                <a class="ftrbtn" href="#">Popular</a>
+            </div>
+        </div>
+
+    </footer>
+    <div class="page-wrapper"></div>
+    <div class="popup">
+        <div class="popup-top">
+            <div class="popup-exit">&#10006;</div>
+        </div>
+        <div class="popup-title">Join Our Newsletter To Stay Up To Date!</div>
+        <div class="popup-text-wrap">
+            <form class="popup-form-wrapper">
+                <div class="form-text">Enter Your Name *</div>
+                <input class="form-field user-name" type="text" placeholder="John Doe" required>
+                <div class="form-text">Enter Your Email *</div>
+                <input class="form-field user-email" type="email" placeholder="johndoe@gmail.com" required>
+                <button class="popup-submit">Submit</button>
+            </form>
+        </div>
+        <div class="popup-title submitted-text">
+        </div>
+    </div>
+    <script src="../scripts/newsletter.js"></script>
+    <script src="../scripts/nav.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+
+</html>
