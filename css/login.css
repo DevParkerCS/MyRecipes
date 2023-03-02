@@ -2,16 +2,19 @@
 
 .main-wrapper {
     height: 100%;
-    width: 100%;
 }
 
+
 .signin-wrapper {
-    height: 100%;
+    height: 590px;
     width: 35%;
     margin: 0 auto;
     background-color: #ffffff;
     margin-top: 7rem;
     box-shadow: 0 2px 5px black;
+    padding-bottom: 1rem;
+    margin-bottom: 9.75rem;
+    padding: 1rem;
 }
 
 .signin-choice-wrap {
@@ -108,8 +111,12 @@
     margin-bottom: 5rem;
 }
 
-.hidden {
-    display: none;
+.name {
+    width: 100%;
+}
+
+.name-wrap {
+    width: 100%;
 }
 
 .signup-wrapper {
@@ -118,11 +125,11 @@
 
 .form-name-wrap {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
 input {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .form-email {
@@ -132,10 +139,40 @@ input {
 
 .form-email-txt {
     margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.name-txt {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .form-password {
     width: 100%;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.form-btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 25px;
+    width: 50%;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: all 0.25s;
+}
+
+.form-btn:hover {
+    color: white;
+    background-color: black;
 }
 
 .signup-thanks {
@@ -143,4 +180,43 @@ input {
     text-align: center;
     font-weight: 600;
     padding: 10px;
+}
+
+.signin-txt {
+    display: flex;
+    color: gray;
+    justify-content: center;
+}
+
+.signin-btn {
+    color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+input:focus {
+    transition: all 0.2s;
+    box-shadow: 0 0 5px black;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .signin-wrapper {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .signin-choice {
+        width: 90%;
+    }
+
+    .logo-txt {
+        font-size: 1.2rem;
+    }
+
+    .form-name-wrap {
+        display: block;
+    }
 }
