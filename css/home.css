@@ -23,32 +23,4 @@ h1 {
     margin: 0;
 }
 
-.dark {
-    background-color: #2B7A78;
-}
-
-.light {
-    background-color: #226361;
-}
-
-.box {
-    width: 50%;
-    height: 500px;
-    margin: 2rem 0;
-    object-fit: cover;
-}
-
-.box-wrapper {
-    margin-left: 5%;
-    display: flex;
-    width: 90%;
-    border-bottom: 2px outset black;
-}
-
-.first-box {
-    border-top: 1px solid black;
-}
-
-.last-box {
-    border: none;
-}
+@media screen and (max-width:480px) {}

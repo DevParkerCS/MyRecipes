@@ -7,7 +7,6 @@ img {
     width: 100%;
     height: 100vh;
     position: relative;
-    margin-bottom: 5rem;
     margin-top: 66px;
 }
 
@@ -151,4 +150,28 @@ img {
 
 .slide-btn:hover {
     background-color: #f1dabf;
+}
+
+@media screen and (max-width:480px) {
+    .slide-title {
+        font-size: 4rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .title-txt {
+        font-size: 2.3rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .slide-btn {
+        font-size: 2rem;
+        width: 65%;
+        margin-top: 2rem;
+    }
+
+    .slide-txt {
+        -webkit-text-stroke: 2px black;
+    }
 }
