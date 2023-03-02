@@ -41,13 +41,13 @@ arrowDropThird.addEventListener("click", () => {
 const setFoodItemsInactive = (foodItem, arrowDrop) => {
     foodItem.forEach(item => {
         item.classList.add("inactive")
-        arrowDrop.innerHTML = "&#62;"
+        arrowDrop.classList.add("rotate")
     })
 }
 
 const setFoodItemsActive = (foodItem, arrowDrop) => {
     foodItem.forEach(item => {
         item.classList.remove("inactive")
-        arrowDrop.innerHTML = "&or;"
+        arrowDrop.classList.remove("rotate")
     })
 }
