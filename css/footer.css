@@ -1,14 +1,5 @@
 .footer-a-wrapper {
-    height: 100%;
     display: flex;
-    flex-direction: column;
-}
-
-.ftrbtn {
-    padding: 0;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-    text-decoration: underline;
 }
 
 .footer-left {
@@ -51,38 +42,77 @@
     font-weight: bold;
     padding: 10px;
     margin: 5px 0;
+    transition: all .25s;
 }
 
 .newsletter-btn:hover {
-    transition: all .2s ease-in-out;
     background-color: #04030F;
     color: white;
 }
 
 .footer-wrapper {
-    height: 500px;
+    height: 100%;
     background-color: #3d3633;
-    margin-top: 3rem;
-    padding-top: 2rem;
-    display: flex;
+    /* margin-top: 3rem; */
+    padding-top: 1rem;
 }
 
-.ftrbtn {
-    margin-left: 30px;
+.footer-flex {
+    display: flex;
+    align-items: center;
+}
+
+.ftrtxt {
     font-size: 1.4rem;
     text-decoration: none;
     font-weight: bold;
     color: WHITE;
+    padding: 10px;
+    text-align: center;
+}
+
+i {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.25s;
+}
+
+.ftrbtn {
+    border: 2px solid #f1dabf;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.25s;
+}
+
+.ftrbtn:hover {
+    background-color: white;
+}
+
+.ftrbtn:hover .home {
+    color: black;
+}
+
+.copy {
+    text-align: center;
+    color: #f1dabf;
+    margin-top: 3rem;
+    padding-bottom: 10px;
+}
+
+.copy>a {
+    text-decoration: none;
+    color: #f1dabf;
 }
 
 @media screen and (max-width:480px) {
-    .footer-wrapper {
-        margin-top: 1rem;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        overflow: hidden;
-        height: 100%;
+    .footer-flex {
+        display: block;
     }
 
     .form-wrapper {
@@ -101,7 +131,6 @@
 
     .ftrbtn {
         margin-left: 0;
-        text-decoration: underline;
         margin: 2.5%;
     }
 
