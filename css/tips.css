@@ -76,13 +76,20 @@ table {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+    overflow: hidden;
 }
 
 .tool-wrapper {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     position: relative;
     transition: all 0.25s;
+}
+
+.overflow {
+    width: 476px;
+    height: 376px;
+    overflow: hidden;
 }
 
 .tool1 {
@@ -128,7 +135,7 @@ table {
 }
 
 .tool-wrapper:hover {
-    transform: scale(1.03);
+    transform: scale(1.06);
     cursor: pointer;
     z-index: 20;
 }
@@ -162,6 +169,10 @@ iframe {
         width: 100%;
     }
 
+    .overflow {
+        width: 100%;
+    }
+
     table {
         overflow-x: auto;
         display: block;
@@ -183,6 +194,7 @@ iframe {
 
     .tool-wrapper {
         width: 100%;
+        height: 100%;
     }
 
     .table-title {
