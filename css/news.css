@@ -44,6 +44,7 @@
     padding: 0;
     max-height: 250px;
     min-height: 250px;
+    transition: all 0.25s;
 }
 
 .img-main {
@@ -99,8 +100,8 @@
     padding: 0 2%;
 }
 
-.main-news-sec:hover {
-    transform: scale(1.03);
+.main-news-sec:hover{
+    transform: scale(1.01);
     cursor: pointer;
     box-shadow: 0 0 10px black;
 }
