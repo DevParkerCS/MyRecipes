@@ -47,6 +47,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.25s;
+    max-height: 65px;
 }
 
 .logo:hover {
@@ -75,6 +76,10 @@ body {
 }
 
 @media screen and (max-width:480px) {
+    .nav-wrapper {
+        overflow: visible;
+    }
+
     .nav-a-wrapper {
         flex-direction: column;
         position: absolute;
@@ -94,14 +99,6 @@ body {
         margin-top: 1rem;
         margin-left: 0;
         text-align: center;
-    }
-
-    .nav-shown.nav-wrapper {
-        overflow: visible;
-    }
-
-    .nav-shown.nav-a-wrapper {
-        right: 0;
     }
 
     .hamburger {

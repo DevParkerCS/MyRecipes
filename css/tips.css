@@ -58,7 +58,7 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../images/knife.jpg");
+    background-image: url("../images/knife.png");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -82,11 +82,11 @@ table {
     width: 50%;
     height: 50%;
     position: relative;
-    transition: all 0.4s;
+    transition: all 0.25s;
 }
 
 .tool1 {
-    background-image: url('../images/knife-set.jpg');
+    background-image: url('../images/knife-set.png');
     height: calc(752px/2);
     background-size: cover;
     background-position: center;
@@ -101,7 +101,7 @@ table {
 }
 
 .tool3 {
-    background-image: url('../images/grater.jpg');
+    background-image: url('../images/grater.png');
     height: calc(752px/2);
     background-size: cover;
     background-position: center;
@@ -109,7 +109,7 @@ table {
 
 
 .tool4 {
-    background-image: url('../images/knife-sharpener.jpg');
+    background-image: url('../images/knife-sharpener.png');
     height: calc(752px/2);
     background-size: cover;
     background-position: center;
@@ -119,16 +119,18 @@ table {
     position: absolute;
     font-size: 2rem;
     font-weight: bold;
-    bottom: 5px;
+    bottom: 0px;
     width: 100%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.671), transparent);
+    color: white;
     padding: 1rem;
 }
 
 .tool-wrapper:hover {
     transform: scale(1.03);
     cursor: pointer;
+    z-index: 20;
 }
 
 .tool-wrapper>a {
