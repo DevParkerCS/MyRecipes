@@ -87,7 +87,7 @@ table {
 }
 
 .overflow {
-    width: 476px;
+    width: 50%;
     max-width: 50%;
     height: 376px;
     overflow: hidden;
